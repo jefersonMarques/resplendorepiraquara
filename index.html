@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Favicon padrão -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+
+    <!-- Cor da barra de navegação em mobile -->
+    <meta name="theme-color" content="#2563EB">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Resplendore Materiais de Construção">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://www.Resplendore.com.br/">
+    <meta property="og:title" content="Resplendore Materiais de Construção | Piraquara - PR">
+    <meta property="og:description"
+        content="Somos referência em materiais de construção em Piraquara-PR. Orçamento rápido e entrega no mesmo dia!">
+    <meta property="og:image"
+        content="https://www.Resplendore.com.brassets/img/loja-material-de-construcao-Resplendore-piraquara.webp">
+    <meta property="og:image:alt" content="Fachada da Resplendore Materiais de Construção">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ResplendoreMateriais"> <!-- se tiver perfil -->
+    <meta name="twitter:title" content="Resplendore Materiais de Construção | Piraquara - PR">
+    <meta name="twitter:description" content="Orçamento rápido e entrega no mesmo dia em Piraquara-PR!">
+    <meta name="twitter:image"
+        content="https://www.Resplendore.com.brassets/img/loja-material-de-construcao-Resplendore-piraquara.webp">
+    <meta name="twitter:image:alt" content="Logo e fachada da Resplendore Materiais de Construção">
+
+
+
+    <title>Resplendore Materiais de Construção | Piraquara - PR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .hover-grow {
+            transition: all 0.2s ease;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.03);
+        }
+
+        .whatsapp-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-blue-900">
+    <header class="bg-white sticky top-0 z-50 shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo + Nome -->
+                <div class="flex items-center space-x-4">
+                    <div class="px-3 h-12 py-1 rounded-md text-sm font-bold tracking-wide">
+                        <img class="w-full h-full" src="assets/img/logo_resplendore_acabamentos.webp"
+                            alt="Logo Resplendore">
+                    </div>
+                    <div class="hidden md:block border-l border-gray-200 pl-4">
+                        <p class="text-sm font-medium text-gray-900">Materiais de Construção</p>
+                        <p class="text-xs text-gray-500"><a
+                                href="https://www.google.com/maps/place/Resplendore+Acabamentos+-+Material+de+Constru%C3%A7%C3%A3o/@-25.4560912,-49.080288,786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94dcf2e59df2d6af:0xae15bf8ba6f96297!8m2!3d-25.4560912!4d-49.0777131!16s%2Fg%2F11c0r5j27x?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D">Piraquara
+                                - PR | 🕒 Seg-Sex: 8h às 18h | Sáb: 8h às 13:00</a></p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <!-- WhatsApp CTA - Destaque -->
+                    <div class="ml-6 relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200">
+                        </div>
+                        <a href="https://wa.me/5541985042162?text=Olá! Gostaria de um orçamento urgente para materiais de construção em Piraquara."
+                            class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-5 rounded-md inline-flex items-center transition-colors duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-whatsapp mr-2 text-white" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                            <span>ORÇAMENTO</span>
+                        </a>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center space-x-4">
+                    <a href="tel:+5541985042162" class="p-2 rounded-full bg-gray-100 text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5541985042162" class="p-2 rounded-full bg-green-500 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    </header>
+
+
+    <section id="hero" class="bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <!-- Text Content (Left) -->
+            <div class="md:w-1/2 space-y-8">
+                <!-- Headline with Conversion Focus -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-800">Peça seu
+                        orçamento</span><br>
+                    <span class="text-3xl text-blue-900">Materiais de Construção em Piraquara</span>
+                </h1>
+
+                <!-- Social Proof with Emoji -->
+                <div class="flex items-center bg-white p-4 rounded-xl shadow-sm border-l-4 border-red-600 max-w-md">
+                    <div class="text-3xl mr-3">⭐</div>
+                    <div>
+                        <p class="font-bold text-blue-900">+190 avaliações 5 estrelas</p>
+                        <p class="text-sm text-gray-600">Confiança e qualidade comprovadas</p>
+                    </div>
+                </div>
+
+                <!-- Primary CTA - WhatsApp Focused -->
+                <div class="space-y-4 pt-4">
+                    <a href="https://wa.me/5541985042162?text=Olá! Gostaria de um orçamento rápido para materiais de construção."
+                        class="block w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-5 px-6 rounded-xl text-lg text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 hidden md:block" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                        PEDIR ORÇAMENTO PELO WHATSAPP
+                    </a>
+
+                    <!-- Secondary CTA -->
+                    <div class="text-center">
+                        <a href="tel:+5541985042162"
+                            class="inline-flex items-center text-gray-700 hover:text-red-600 font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Ou ligue agora: (41) 3673-2797
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Benefits Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+                    <div
+                        class="flex items-start bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                        <div class="bg-red-100 p-2 rounded-lg mr-3 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-blue-900">Produtos com Garantia</h3>
+                            <p class="text-sm text-gray-600">Qualidade assegurada</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-start bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                        <div class="bg-blue-100 p-2 rounded-lg mr-3 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-blue-900">Entrega Rápida</h3>
+                            <p class="text-sm text-gray-600">No mesmo dia para Piraquara</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image (Right) -->
+            <div class="md:w-1/2 relative">
+                <div
+                    class="relative rounded-2xl overflow-hidden shadow-2xl transform hover:rotate-1 transition duration-300">
+                    <img src="assets/img/fachada_resplendore.webp"
+                        alt="Loja Resplendore Materiais de Construção em Piraquara" class="w-full h-auto object-cover">
+
+                    <!-- Google Reviews Badge -->
+                    <div
+                        class="absolute bottom-2 right-2 bg-white px-5 py-3 rounded-xl shadow-xl border-2 border-yellow-400 flex items-center space-x-2 animate-pulse hover:animate-none">
+                        <div class="text-yellow-500 text-3xl">★</div>
+                        <div class="text-left">
+                            <div class="text-xl font-extrabold text-blue-900 leading-none">4,5/5</div>
+                            <div class="text-xs font-semibold text-gray-500">AVALIAÇÃO EXCELENTE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating WhatsApp Button (Mobile) -->
+                <div class="hidden fixed bottom-6 right-6 z-50">
+                    <a href="https://wa.me/5541985042162?text=Olá! Gostaria de um orçamento rápido para materiais de construção."
+                        class="bg-green-500 text-white p-4 rounded-full shadow-lg animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento" class="py-20 bg-gradient-to-br from-gray-50 to-white border-t border-gray-100">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-sky-900 mb-8">Monte sua Lista de Orçamento</h2>
+            <p class="text-center text-gray-600 mb-8">Adicione os produtos e as quantidades desejadas, e envie
+                diretamente via WhatsApp.</p>
+
+            <form id="formOrcamento" class="space-y-6">
+
+                <!-- Nome -->
+                <div>
+                    <label for="nome" class="block mb-2 text-sm font-medium text-gray-700">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <!-- Adicionar Item -->
+                <div>
+                    <label for="produto" class="block mb-2 text-sm font-medium text-gray-700">Produto e
+                        Quantidade</label>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input type="number" id="quantidade" min="1" value="1"
+                            class="w-full sm:w-20 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <input type="text" id="produto" placeholder="Ex.: sacos de cimento"
+                            class="w-full flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <button type="button" id="addItem"
+                            class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transform hover:scale-105 transition">
+                            Adicionar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Lista de itens -->
+                <div>
+                    <ul id="listaItens" class="space-y-2"></ul>
+                </div>
+
+                <!-- Forma de recebimento -->
+                <div>
+                    <label for="tipo" class="block mb-2 text-sm font-medium text-gray-700">Como prefere receber o
+                        material?</label>
+                    <select id="tipo" name="tipo" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <option disabled selected value="">Selecione a forma de entrega</option>
+                        <option value="Entregar no endereço">Entregar no endereço</option>
+                        <option value="Retirada na loja">Retirada na loja</option>
+                        <option value="Não decidi ainda">Não decidi ainda</option>
+                    </select>
+                </div>
+
+                <!-- Endereço (oculto inicialmente) -->
+                <div id="campoEndereco" class="hidden">
+                    <label for="endereco" class="block mb-2 text-sm font-medium text-gray-700">Endereço para
+                        Entrega</label>
+                    <textarea id="endereco" rows="3"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                        placeholder="Rua, número, bairro, cidade..."></textarea>
+                </div>
+
+                <!-- Botão -->
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-lg shadow-lg transform hover:scale-105 transition animate-pulse">
+                    Enviar Lista via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('formOrcamento');
+        const listaItens = document.getElementById('listaItens');
+        const produtoInput = document.getElementById('produto');
+        const quantidadeInput = document.getElementById('quantidade');
+        const addItem = document.getElementById('addItem');
+        const tipoSelect = document.getElementById('tipo');
+        const campoEndereco = document.getElementById('campoEndereco');
+        const enderecoInput = document.getElementById('endereco');
+
+        let itens = [];
+
+        function renderLista() {
+            listaItens.innerHTML = '';
+            itens.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center justify-between bg-white p-3 rounded-lg shadow border border-gray-200';
+                li.innerHTML = `
+                <span class="text-gray-700">${item.quantidade} ${item.produto}</span>
+                <button type="button" class="text-red-500 hover:text-red-700 font-bold text-lg" data-index="${index}">&times;</button>
+            `;
+                listaItens.appendChild(li);
+            });
+        }
+
+        // Mostrar ou esconder o campo de endereço
+        tipoSelect.addEventListener('change', () => {
+            if (tipoSelect.value === 'Entregar no endereço') {
+                campoEndereco.classList.remove('hidden');
+            } else {
+                campoEndereco.classList.add('hidden');
+                enderecoInput.value = '';
+            }
+        });
+
+        addItem.addEventListener('click', () => {
+            const produto = produtoInput.value.trim();
+            const quantidade = quantidadeInput.value.trim();
+
+            if (produto && quantidade > 0) {
+                itens.push({ produto, quantidade });
+                produtoInput.value = '';
+                quantidadeInput.value = 1;
+                renderLista();
+            }
+        });
+
+        listaItens.addEventListener('click', function (e) {
+            if (e.target.tagName === 'BUTTON') {
+                const index = e.target.getAttribute('data-index');
+                itens.splice(index, 1);
+                renderLista();
+            }
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nome = form.nome.value.trim();
+            const tipo = form.tipo.value;
+
+            if (itens.length === 0) {
+                alert('Adicione pelo menos um item à lista, clique em adicionar');
+                return;
+            }
+
+            const endereco = enderecoInput.value.trim();
+
+            const listaFormatada = itens.map(i => `• ${i.quantidade}x ${i.produto}`).join('\n');
+
+            let mensagem = `*Novo orçamento*\n\n*Nome do cliente:* ${nome}\n\n*Lista de Produtos:*\n${listaFormatada}\n\n*Tipo de entrega:* ${tipo}`;
+
+            if (endereco) {
+                mensagem += `\n\n*Endereço de entrega:* ${endereco}`;
+            }
+
+            mensagem += `\n\nAguardo retorno. Muito obrigado!`;
+
+            const urlWhatsApp = `https://wa.me/5541985042162?text=${encodeURIComponent(mensagem)}`;
+
+            window.open(urlWhatsApp, '_blank');
+
+            form.reset();
+            itens = [];
+            renderLista();
+        });
+
+    </script>
+
+    <section class="py-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+
+            <!-- Título com palavra-chave -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-sky-900 mb-12">
+                Sua escolha de confiança em <span class="text-red-600">materiais de construção em Piraquara</span>
+            </h2>
+
+            <!-- Subtexto para SEO -->
+            <p class="text-gray-700 max-w-2xl mx-auto mb-10 text-base">
+                A <strong>Resplendore Materiais de Construção</strong> é a preferida de quem busca qualidade e agilidade
+                em <strong>Piraquara - PR</strong>. Trabalhamos com <em>cimento, areia, brita, tijolos, pisos e muito
+                    mais</em>. Descubra por que tantos clientes confiam na Resplendore!
+            </p>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-sky-50 p-6 rounded-2xl border border-sky-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-sky-200 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-sky-700 text-3xl">construction</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-2">Materiais de Primeira Linha</h3>
+                    <p class="text-gray-700 text-base">Produtos selecionados para garantir segurança e durabilidade em
+                        cada etapa da sua obra.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-sky-50 p-6 rounded-2xl border border-sky-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-amber-200 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-amber-700 text-3xl">local_shipping</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-2">Entrega Ágil e Segura</h3>
+                    <p class="text-gray-700 text-base">Comprometimento com prazos: entregamos rápido e com total
+                        segurança em Piraquara.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-sky-50 p-6 rounded-2xl border border-sky-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-green-200 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-green-700 text-3xl">savings</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-2">Preços Justos</h3>
+                    <p class="text-gray-700 text-base">Oferecemos as melhores condições e custo-benefício para sua
+                        construção evoluir com economia.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-sky-50 p-6 rounded-2xl border border-sky-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-rose-200 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-rose-700 text-3xl">support_agent</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-2">Atendimento Personalizado</h3>
+                    <p class="text-gray-700 text-base">Nossa equipe especializada orienta na escolha dos materiais
+                        certos para sua obra ter o melhor resultado.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Chamada WhatsApp -->
+    <section class="py-16 bg-green-500 text-white text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Precisa de materiais para sua obra?</h2>
+                <p class="text-xl mb-8">Envie sua lista pelo WhatsApp e receba um orçamento rápido!</p>
+                <a href="https://wa.me/5541985042162?text=Gostaria%20de%20fazer%20um%20orçamento"
+                    class="inline-flex items-center bg-white hover:bg-gray-100 text-green-600 font-bold py-4 px-8 text-lg rounded-lg hover-grow">
+                    <span class="material-symbols-outlined mr-2">chat</span> FALAR COM ATENDENTE AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Título com SEO local -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-sky-900 text-center mb-4">
+                Tudo para sua Construção em Piraquara
+            </h2>
+
+            <p class="text-center text-gray-700 max-w-3xl mx-auto mb-12 text-base">
+                Na <strong>Resplendore</strong>, você encontra os melhores <em>materiais de construção</em> em
+                <strong>Piraquara - PR</strong>.
+                Produtos de qualidade, entrega ágil e um atendimento que entende do seu projeto.
+            </p>
+
+            <!-- Cards com categorias -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-sky-100 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-sky-700 text-3xl">construction</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-3">Materiais para Obra</h3>
+                    <ul class="text-gray-700 space-y-1 text-sm">
+                        <li>✓ Cimento, cal, areia e brita</li>
+                        <li>✓ Tijolos e blocos estruturais</li>
+                        <li>✓ Telhas e impermeabilizantes</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-blue-100 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-blue-700 text-3xl">water_drop</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-3">Hidráulica</h3>
+                    <ul class="text-gray-700 space-y-1 text-sm">
+                        <li>✓ Tubos, conexões e registros</li>
+                        <li>✓ Caixas d’água e bombas</li>
+                        <li>✓ Esgoto, chuveiros e torneiras</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-yellow-100 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-yellow-700 text-3xl">bolt</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-3">Elétrica</h3>
+                    <ul class="text-gray-700 space-y-1 text-sm">
+                        <li>✓ Fios, cabos e disjuntores</li>
+                        <li>✓ Lâmpadas e interruptores</li>
+                        <li>✓ Quadros e acessórios</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-rose-100 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-rose-700 text-3xl">format_paint</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-3">Acabamentos</h3>
+                    <ul class="text-gray-700 space-y-1 text-sm">
+                        <li>✓ Tintas, massas e vernizes</li>
+                        <li>✓ Pisos e porcelanatos</li>
+                        <li>✓ Portas e fechaduras</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-green-100 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-green-700 text-3xl">build</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-3">Ferramentas e EPIs</h3>
+                    <ul class="text-gray-700 space-y-1 text-sm">
+                        <li>✓ Furadeiras e serras</li>
+                        <li>✓ Equipamentos de proteção</li>
+                        <li>✓ Trenas e acessórios</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-transform hover:-translate-y-1">
+                    <div class="bg-orange-100 p-3 rounded-lg inline-flex mb-4">
+                        <span class="material-symbols-outlined text-orange-700 text-3xl">forest</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-900 mb-3">Madeiras e Chapas</h3>
+                    <ul class="text-gray-700 space-y-1 text-sm">
+                        <li>✓ Madeiras e compensados</li>
+                        <li>✓ MDF, MDP e OSB</li>
+                        <li>✓ Tábuas e caibros</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chamada para ação -->
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/5541985042162?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20materiais%20de%20construção%20em%20Piraquara."
+                    class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg transition-transform hover:scale-105">
+                    <span class="hidden md:block material-symbols-outlined mr-2">chat</span>
+                    Solicite um orçamento pelo WhatsApp
+                </a>
+
+                <p class="mt-4 text-sm text-gray-600">
+                    Atendimento rápido e personalizado — fale direto com nossa equipe!
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white border-t border-gray-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+
+            <!-- Título -->
+            <span
+                class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-full uppercase tracking-wider mb-2">
+                Qualidade garantida
+            </span>
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-900 mb-4">
+                Trabalhamos com as melhores marcas do Brasil
+            </h2>
+
+            <!-- Subtítulo com tag -->
+            <p class="text-gray-600 text-sm mb-8">
+                Representamos marcas reconhecidas nacionalmente por sua durabilidade, desempenho e confiança em obras de
+                todos os tamanhos.
+            </p>
+
+            <!-- Carrossel -->
+            <div class="overflow-hidden">
+                <div class="flex gap-12 animate-scroll-left whitespace-nowrap">
+                    <img src="assets/img/brands/tigre.webp" alt="Tigre"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/krona.webp" alt="Krona"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/fortlev.webp" alt="Fortlev"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/votorantim.webp" alt="Votoran"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/vedacit.webp" alt="Vedacit"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/gerdau.webp" alt="Gerdau"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/deca.webp" alt="Deca"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/dacar.webp" alt="Dacar"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/lorenzetti.webp" alt="Lorenzetti"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/suvinil.webp" alt="Suvinil"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/tramontina.webp" alt="Tramontina"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/vonder.webp" alt="Vonder"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+
+                    <!-- Clones -->
+                    <img src="assets/img/brands/tigre.webp" alt="Tigre"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/krona.webp" alt="Krona"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/fortlev.webp" alt="Fortlev"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/votorantim.webp" alt="Votoran"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/vedacit.webp" alt="Vedacit"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/gerdau.webp" alt="Gerdau"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/deca.webp" alt="Deca"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/dacar.webp" alt="Dacar"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/lorenzetti.webp" alt="Lorenzetti"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/suvinil.webp" alt="Suvinil"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/tramontina.webp" alt="Tramontina"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                    <img src="assets/img/brands/vonder.webp" alt="Vonder"
+                        class="h-16 rounded-xl hover:bg-gray-100 transition w-auto p-4 bg-gray-50 grayscale hover:grayscale-0 transition" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-900 mb-2">
+                Avaliações reais dos nossos clientes
+            </h2>
+            <p class="text-gray-600 text-sm mb-10 max-w-2xl mx-auto">
+                Veja o que moradores de <strong>Piraquara</strong> dizem sobre a experiência com a <strong>Resplendore
+                    Materiais de Construção</strong>
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                <!-- Comentário 1 -->
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-transform hover:-translate-y-1">
+                    <div class="flex items-center text-yellow-500 mb-2">
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                    </div>
+                    <p class="text-gray-800 mb-4 text-sm">“Muito bom! Ótimo atendimento e preço justo. Pessoal super
+                        atencioso, parabéns!”</p>
+                    <p class="text-xs text-gray-500 font-semibold">— Antonio Carlos De Souza (Local Guide)</p>
+                </div>
+
+                <!-- Comentário 2 -->
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-transform hover:-translate-y-1">
+                    <div class="flex items-center text-yellow-500 mb-2">
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                    </div>
+                    <p class="text-gray-800 mb-4 text-sm">“Ótima loja de materiais de construção, preços acessíveis e
+                        atendimento excelente.”</p>
+                    <p class="text-xs text-gray-500 font-semibold">— João Carneiro Neto (Local Guide)</p>
+                </div>
+
+                <!-- Comentário 3 -->
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-transform hover:-translate-y-1">
+                    <div class="flex items-center text-yellow-500 mb-2">
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                    </div>
+                    <p class="text-gray-800 mb-4 text-sm">“Adoro o atendimento, sempre volto! Loja completa com ótimos
+                        produtos.”</p>
+                    <p class="text-xs text-gray-500 font-semibold">— Leonilda Ostroski (Local Guide)</p>
+                </div>
+
+                <!-- Comentário 4 -->
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-transform hover:-translate-y-1">
+                    <div class="flex items-center text-yellow-500 mb-2">
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                    </div>
+                    <p class="text-gray-800 mb-4 text-sm">“Primeira visita: loja limpa, organizada, ótimos preços e
+                        atendimento excelente. Voltarei!”</p>
+                    <p class="text-xs text-gray-500 font-semibold">— Roberto Angel Ortega (Local Guide)</p>
+                </div>
+
+                <!-- Comentário 5 -->
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-transform hover:-translate-y-1">
+                    <div class="flex items-center text-yellow-500 mb-2">
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                    </div>
+                    <p class="text-gray-800 mb-4 text-sm">“Sem dúvidas, a melhor loja de Piraquara! Produtos de
+                        qualidade e atendimento excepcional.”</p>
+                    <p class="text-xs text-gray-500 font-semibold">— Marisa Mello</p>
+                </div>
+
+                <!-- Comentário 6 -->
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-transform hover:-translate-y-1">
+                    <div class="flex items-center text-yellow-500 mb-2">
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                        <span class="material-symbols-outlined text-xl">star</span>
+                    </div>
+                    <p class="text-gray-800 mb-4 text-sm">“Atendimento excelente! Equipe educada e sempre pronta para
+                        ajudar. Recomendo!”</p>
+                    <p class="text-xs text-gray-500 font-semibold">— Adalberto Dagnoni (Local Guide)</p>
+                </div>
+            </div>
+<div class="mt-8 text-center">
+    <a href="https://www.google.com/search?sca_esv=c040be438cc12ffb&sxsrf=AHTn8zpx2bzcHDHyJVpyWR_i6CmW3eyNvQ:1747848907663&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzZ7PUIoLPFtB_mwXegAqj2JsuyiO0CK67N682iJ8mFfu_Qk37GoTlHoNRHr_vRp0TsBgkhD221onNQuIFgQ1kbKg50S24UqjazLuK3xu3-gPzngvCyT7jPq9UltkwHBWJ2f4OztIG4AFc_5MqjpeLCq-dgmR&q=Resplendore+Acabamentos+-+Material+de+Constru%C3%A7%C3%A3o+Coment%C3%A1rios&sa=X&ved=2ahUKEwiTqYzKjLWNAxVuK7kGHXB5D30Q0bkNegQIIBAE&biw=1536&bih=730&dpr=1.25#lrd=0x94dcf2e59df2d6af:0xae15bf8ba6f96297,3,,,,"
+       target="_blank"
+       class="inline-flex items-center justify-center bg-sky-600 hover:bg-sky-700 text-white font-bold px-6 py-3 rounded-xl text-base shadow-md transition-transform hover:scale-105">
+        <span class="material-symbols-outlined mr-2">rate_review</span>
+        Quero avaliar
+    </a>
+</div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Visite Nossa Loja</h2>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2 bg-white p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-6">Informações</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-lg mr-4">
+                                <span class="material-symbols-outlined text-red-500">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Endereço</h4>
+                                <p>Rod. Dep. João Leopoldo Jacomel, 1926 - Jd. Bela Vista<br>Piraquara - PR</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <span class="material-symbols-outlined text-blue-500">call</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Telefone</h4>
+                                <p>(41) 98504-2162</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                                <span class="material-symbols-outlined text-yellow-500">schedule</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Horário</h4>
+                                <p>Segunda a Sexta: 8h às 18h | Sábado: 8h às 13h</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <a href="https://wa.me/5541985042162?text=Gostaria%20de%20fazer%20um%20orçamento"
+                                class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 text-lg rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="mr-2 bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg> CHAMAR NO WHATSAPP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.219436205411!2d-49.08028802482758!3d-25.45609117754525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf2e59df2d6af%3A0xae15bf8ba6f96297!2sResplendore%20Acabamentos%20-%20Material%20de%20Constru%C3%A7%C3%A3o!5e1!3m2!1spt-BR!2sbr!4v1747845372938!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="min-height: 400px; border:0;" allowfullscreen=""
+                        loading="lazy" class="rounded-lg"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-10 border-b border-gray-700 pb-10">
+
+                <!-- Logo + Descrição -->
+                <div>
+                    <img src="assets/img/logo_resplendore_acabamentos_branca.webp"
+                        alt="Resplendore Materiais de Construção" class="h-12 mb-4">
+                    <p class="text-sm leading-relaxed text-gray-400">
+                        Tudo para sua obra, reforma ou construção em Piraquara. Atendimento rápido, preço justo e
+                        qualidade garantida.
+                    </p>
+                </div>
+
+                <!-- Navegação -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Links rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="hover:text-white transition">🏠 Início</a></li>
+                        <li><a href="#produtos" class="hover:text-white transition">🧱 Produtos</a></li>
+                        <li><a href="#contato" class="hover:text-white transition">📍 Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Fale com a gente</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <span class="inline-block w-5 text-green-400">📞</span>
+                            <a href="tel:+5541985042162" class="hover:text-white">(41) 98504-2162</a>
+                        </li>
+                        <li>
+                            <span class="inline-block w-5 text-red-400">📍</span>
+                            Rod. Dep. João Leopoldo Jacomel, 1926 - Jd. Bela Vista
+                        </li>
+                        <li>
+                            <span class="inline-block w-5 text-yellow-400">⏰</span>
+                            Seg a Sex: 8h às 18h | Sáb: 8h às 13h
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-500">
+                &copy; 2024 Resplendore Materiais de Construção – Todos os direitos reservados.<br>
+                <span class="mt-2 block">
+                    Feito pela equipe <a href="https://noudoc.com" target="_blank"
+                        class="text-white underline hover:text-green-400">noudoc.com</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/5541985042162?text=Gostaria%20de%20fazer%20um%20orçamento"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center z-50 whatsapp-pulse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp"
+            viewBox="0 0 16 16">
+            <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+        </svg>
+    </a>
+
+    <script>
+        document.getElementById('formOrcamento').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const produtos = document.getElementById('produtos').value.trim();
+
+            const mensagem = `Olá! Gostaria de solicitar um orçamento:\n\nNome: ${nome}\nTelefone: ${telefone}\nProdutos: ${produtos}`;
+
+            const encodedMessage = encodeURIComponent(mensagem);
+            const numeroWhatsApp = '5541985042162';
+
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodedMessage}`;
+
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+
+</html>
